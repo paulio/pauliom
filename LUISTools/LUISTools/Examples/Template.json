@@ -1,8 +1,8 @@
 {
   "BatchTestItems": [
     {
-      "text": "how can I call <personName>",
-      "intent": "WhatIsTheirNumber",
+      "text": "how old is <personName>",
+      "intent": "WhatIsTheirAge",
       "entities": [
         {
           "entity": "personName"
@@ -10,26 +10,8 @@
       ]
     },
     {
-      "text": "how do I call <personName>",
-      "intent": "WhatIsTheirNumber",
-      "entities": [
-        {
-          "entity": "personName"
-        }
-      ]
-    },
-    {
-      "text": "show me <personName>'s number?",
-      "intent": "WhatIsTheirNumber",
-      "entities": [
-        {
-          "entity": "personName"
-        }
-      ]
-    },
-    {
-      "text": "what is <personName>'s number?",
-      "intent": "WhatIsTheirNumber",
+      "text": "what age is <personName>",
+      "intent": "WhatIsTheirAge",
       "entities": [
         {
           "entity": "personName"
