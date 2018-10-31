@@ -7,6 +7,6 @@ namespace LUISTools.Models
 
     public class BatchExamples
     {
-        public List<BatchExample> Examples { get; set; }
+        public List<BatchExample> Examples { get; set; } = new List<BatchExample>();
     }
 }

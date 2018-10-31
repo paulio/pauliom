@@ -1,0 +1,11 @@
+[
+  {
+    "Intent": "WhatIsTheirNumber",
+    "EntitySources": [
+      {
+        "EntityName": "personName",
+        "FilePathToValue": "D:\\Repos\\pauliom\\LUISTools\\LUISTools\\Examples\\PersonNames.txt"
+      }
+    ]
+  }
+]

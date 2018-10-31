@@ -1,6 +1,7 @@
 ﻿
 namespace LUISTools
 {
+    using LUISTools.Helpers;
     using LUISTools.Models;
     using Newtonsoft.Json;
     using System;
@@ -12,8 +13,8 @@ namespace LUISTools
     {
         public void GenerateTest(Stream template, Stream entityExamples, Stream output)
         {
-            var templateBatch = DeserializeFromStream<BatchTest>(template);
-            var batchExamples = DeserializeFromStream<BatchExamples>(entityExamples);
+            var templateBatch = JsonHelper.DeserializeFromStream<BatchTest>(template);
+            var batchExamples = JsonHelper.DeserializeFromStream<BatchExamples>(entityExamples);
 
             var batchTest = new BatchTest();
 
@@ -48,29 +49,9 @@ namespace LUISTools
                 }
             }
 
-            SerializeToStream(batchTest.BatchTestItems, output);
+            JsonHelper.SerializeToStream(batchTest.BatchTestItems, output);
         }
 
-        public static void SerializeToStream(object value, Stream s)
-        {
-            using (StreamWriter writer = new StreamWriter(s))
-            using (JsonTextWriter jsonWriter = new JsonTextWriter(writer))
-            {
-                JsonSerializer ser = new JsonSerializer();
-                ser.Serialize(jsonWriter, value);
-                jsonWriter.Flush();
-            }
-        }
-
-        public static T DeserializeFromStream<T>(Stream stream)
-        {
-            var serializer = new JsonSerializer();
-
-            using (var sr = new StreamReader(stream))
-            using (var jsonTextReader = new JsonTextReader(sr))
-            {
-                return serializer.Deserialize<T>(jsonTextReader);
-            }
-        }
+       
     }
 }

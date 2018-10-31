@@ -3,24 +3,14 @@
     {
       "Intent": "WhatIsTheirNumber",
       "ExamplesByEntity": [
-        {
-          "personName": "Marcus Loh"
-        },
-        {
-          "personName": "Sandy Tnay"
-        },
-        {
-          "personName": "Daniel Kwok"
-        },
-        {
-          "personName": "Chie Oshita"
-        },
-        {
-          "personName": "Liem Pham"
-        },
-        {
-          "personName": "Vincent Ong"
-        }
+        { "personName": "Marcus Loh" },
+        { "personName": "Sandy Tnay" },
+        { "personName": "Daniel Kwok" },
+        { "personName": "Chie Oshita" },
+        { "personName": "Liem Pham" },
+        { "personName": "Vincent Ong" },
+        { "personName": "Kenneth Chan" },
+        { "personName": "Paul Marsh" }
       ]
     }
   ]
