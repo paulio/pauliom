@@ -1,0 +1,40 @@
+{
+  "BatchTestItems": [
+    {
+      "text": "how can I call <personName>",
+      "intent": "WhatIsTheirNumber",
+      "entities": [
+        {
+          "entity": "personName"
+        }
+      ]
+    },
+    {
+      "text": "how do I call <personName>",
+      "intent": "WhatIsTheirNumber",
+      "entities": [
+        {
+          "entity": "personName"
+        }
+      ]
+    },
+    {
+      "text": "show me <personName>'s number?",
+      "intent": "WhatIsTheirNumber",
+      "entities": [
+        {
+          "entity": "personName"
+        }
+      ]
+    },
+    {
+      "text": "what is <personName>'s number?",
+      "intent": "WhatIsTheirNumber",
+      "entities": [
+        {
+          "entity": "personName"
+        }
+      ]
+    }
+  ]
+}
