@@ -1,17 +1,354 @@
-{
-  "Examples": [
-    {
-      "Intent": "WhatIsTheirNumber",
-      "ExamplesByEntity": [
-        { "personName": "Marcus Loh" },
-        { "personName": "Sandy Tnay" },
-        { "personName": "Daniel Kwok" },
-        { "personName": "Chie Oshita" },
-        { "personName": "Liem Pham" },
-        { "personName": "Vincent Ong" },
-        { "personName": "Kenneth Chan" },
-        { "personName": "Paul Marsh" }
-      ]
-    }
-  ]
-}
+[
+  {
+    "text": "how can I call Marcus Loh",
+    "intent": "WhatIsTheirNumber",
+    "entities": [
+      {
+        "entity": "personName",
+        "startPos": 15,
+        "endPos": 25
+      }
+    ]
+  },
+  {
+    "text": "how do I call Marcus Loh",
+    "intent": "WhatIsTheirNumber",
+    "entities": [
+      {
+        "entity": "personName",
+        "startPos": 14,
+        "endPos": 24
+      }
+    ]
+  },
+  {
+    "text": "show me Marcus Loh's number?",
+    "intent": "WhatIsTheirNumber",
+    "entities": [
+      {
+        "entity": "personName",
+        "startPos": 8,
+        "endPos": 18
+      }
+    ]
+  },
+  {
+    "text": "what is Marcus Loh's number?",
+    "intent": "WhatIsTheirNumber",
+    "entities": [
+      {
+        "entity": "personName",
+        "startPos": 8,
+        "endPos": 18
+      }
+    ]
+  },
+  {
+    "text": "how can I call Sandy Tnay",
+    "intent": "WhatIsTheirNumber",
+    "entities": [
+      {
+        "entity": "personName",
+        "startPos": 15,
+        "endPos": 25
+      }
+    ]
+  },
+  {
+    "text": "how do I call Sandy Tnay",
+    "intent": "WhatIsTheirNumber",
+    "entities": [
+      {
+        "entity": "personName",
+        "startPos": 14,
+        "endPos": 24
+      }
+    ]
+  },
+  {
+    "text": "show me Sandy Tnay's number?",
+    "intent": "WhatIsTheirNumber",
+    "entities": [
+      {
+        "entity": "personName",
+        "startPos": 8,
+        "endPos": 18
+      }
+    ]
+  },
+  {
+    "text": "what is Sandy Tnay's number?",
+    "intent": "WhatIsTheirNumber",
+    "entities": [
+      {
+        "entity": "personName",
+        "startPos": 8,
+        "endPos": 18
+      }
+    ]
+  },
+  {
+    "text": "how can I call Daniel Kwok",
+    "intent": "WhatIsTheirNumber",
+    "entities": [
+      {
+        "entity": "personName",
+        "startPos": 15,
+        "endPos": 26
+      }
+    ]
+  },
+  {
+    "text": "how do I call Daniel Kwok",
+    "intent": "WhatIsTheirNumber",
+    "entities": [
+      {
+        "entity": "personName",
+        "startPos": 14,
+        "endPos": 25
+      }
+    ]
+  },
+  {
+    "text": "show me Daniel Kwok's number?",
+    "intent": "WhatIsTheirNumber",
+    "entities": [
+      {
+        "entity": "personName",
+        "startPos": 8,
+        "endPos": 19
+      }
+    ]
+  },
+  {
+    "text": "what is Daniel Kwok's number?",
+    "intent": "WhatIsTheirNumber",
+    "entities": [
+      {
+        "entity": "personName",
+        "startPos": 8,
+        "endPos": 19
+      }
+    ]
+  },
+  {
+    "text": "how can I call Chie Oshita",
+    "intent": "WhatIsTheirNumber",
+    "entities": [
+      {
+        "entity": "personName",
+        "startPos": 15,
+        "endPos": 26
+      }
+    ]
+  },
+  {
+    "text": "how do I call Chie Oshita",
+    "intent": "WhatIsTheirNumber",
+    "entities": [
+      {
+        "entity": "personName",
+        "startPos": 14,
+        "endPos": 25
+      }
+    ]
+  },
+  {
+    "text": "show me Chie Oshita's number?",
+    "intent": "WhatIsTheirNumber",
+    "entities": [
+      {
+        "entity": "personName",
+        "startPos": 8,
+        "endPos": 19
+      }
+    ]
+  },
+  {
+    "text": "what is Chie Oshita's number?",
+    "intent": "WhatIsTheirNumber",
+    "entities": [
+      {
+        "entity": "personName",
+        "startPos": 8,
+        "endPos": 19
+      }
+    ]
+  },
+  {
+    "text": "how can I call Liem Pham",
+    "intent": "WhatIsTheirNumber",
+    "entities": [
+      {
+        "entity": "personName",
+        "startPos": 15,
+        "endPos": 24
+      }
+    ]
+  },
+  {
+    "text": "how do I call Liem Pham",
+    "intent": "WhatIsTheirNumber",
+    "entities": [
+      {
+        "entity": "personName",
+        "startPos": 14,
+        "endPos": 23
+      }
+    ]
+  },
+  {
+    "text": "show me Liem Pham's number?",
+    "intent": "WhatIsTheirNumber",
+    "entities": [
+      {
+        "entity": "personName",
+        "startPos": 8,
+        "endPos": 17
+      }
+    ]
+  },
+  {
+    "text": "what is Liem Pham's number?",
+    "intent": "WhatIsTheirNumber",
+    "entities": [
+      {
+        "entity": "personName",
+        "startPos": 8,
+        "endPos": 17
+      }
+    ]
+  },
+  {
+    "text": "how can I call Vincent Ong",
+    "intent": "WhatIsTheirNumber",
+    "entities": [
+      {
+        "entity": "personName",
+        "startPos": 15,
+        "endPos": 26
+      }
+    ]
+  },
+  {
+    "text": "how do I call Vincent Ong",
+    "intent": "WhatIsTheirNumber",
+    "entities": [
+      {
+        "entity": "personName",
+        "startPos": 14,
+        "endPos": 25
+      }
+    ]
+  },
+  {
+    "text": "show me Vincent Ong's number?",
+    "intent": "WhatIsTheirNumber",
+    "entities": [
+      {
+        "entity": "personName",
+        "startPos": 8,
+        "endPos": 19
+      }
+    ]
+  },
+  {
+    "text": "what is Vincent Ong's number?",
+    "intent": "WhatIsTheirNumber",
+    "entities": [
+      {
+        "entity": "personName",
+        "startPos": 8,
+        "endPos": 19
+      }
+    ]
+  },
+  {
+    "text": "how can I call Kenneth Chan",
+    "intent": "WhatIsTheirNumber",
+    "entities": [
+      {
+        "entity": "personName",
+        "startPos": 15,
+        "endPos": 27
+      }
+    ]
+  },
+  {
+    "text": "how do I call Kenneth Chan",
+    "intent": "WhatIsTheirNumber",
+    "entities": [
+      {
+        "entity": "personName",
+        "startPos": 14,
+        "endPos": 26
+      }
+    ]
+  },
+  {
+    "text": "show me Kenneth Chan's number?",
+    "intent": "WhatIsTheirNumber",
+    "entities": [
+      {
+        "entity": "personName",
+        "startPos": 8,
+        "endPos": 20
+      }
+    ]
+  },
+  {
+    "text": "what is Kenneth Chan's number?",
+    "intent": "WhatIsTheirNumber",
+    "entities": [
+      {
+        "entity": "personName",
+        "startPos": 8,
+        "endPos": 20
+      }
+    ]
+  },
+  {
+    "text": "how can I call Paul Marsh",
+    "intent": "WhatIsTheirNumber",
+    "entities": [
+      {
+        "entity": "personName",
+        "startPos": 15,
+        "endPos": 25
+      }
+    ]
+  },
+  {
+    "text": "how do I call Paul Marsh",
+    "intent": "WhatIsTheirNumber",
+    "entities": [
+      {
+        "entity": "personName",
+        "startPos": 14,
+        "endPos": 24
+      }
+    ]
+  },
+  {
+    "text": "show me Paul Marsh's number?",
+    "intent": "WhatIsTheirNumber",
+    "entities": [
+      {
+        "entity": "personName",
+        "startPos": 8,
+        "endPos": 18
+      }
+    ]
+  },
+  {
+    "text": "what is Paul Marsh's number?",
+    "intent": "WhatIsTheirNumber",
+    "entities": [
+      {
+        "entity": "personName",
+        "startPos": 8,
+        "endPos": 18
+      }
+    ]
+  }
+]

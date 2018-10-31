@@ -10,9 +10,30 @@ namespace LUISTools
     using System.Linq;
     using System.Text;
 
-    public class ExampleGeneratorTool
+    public class ExampleGeneratorTool : ISupportsCommands
     {
         private Dictionary<string, List<string>> entityValues = new Dictionary<string, List<string>>();
+
+        public string Help => "GenerateExample:=true Map:=<path to map.json> Out:=<path to resulting json>";
+
+        public bool CanHandle(Dictionary<string, string> commands)
+        {
+            return commands.ContainsKey("GenerateExample");
+        }
+
+        public string Execute(Dictionary<string, string> commands)
+        {
+            string mapPath = commands["map"];
+            string outputPath = commands["exampleresult"];
+            using (FileStream map = new FileStream(mapPath, FileMode.Open))
+            using (FileStream result = new FileStream(outputPath, FileMode.Create))
+            {
+                this.GenerateExampleFromFiles(map, result);
+            }
+
+            return nameof(ExampleGeneratorTool) + " wrote to " + outputPath;
+        }
+
         public void GenerateExampleFromFiles(Stream map, Stream output)
         {
             var exampleMaps = JsonHelper.DeserializeFromStream<List<ExampleMap>>(map);

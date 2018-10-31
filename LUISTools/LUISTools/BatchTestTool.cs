@@ -9,8 +9,30 @@ namespace LUISTools
     using System.IO;
     using System.Linq;
 
-    public class BatchTestTool
+    public class BatchTestTool : ISupportsCommands
     {
+        public string Help => "GenerateBatchTest:=true Template:=<path to template.json> ExampleEntities:=<path to example entities.json> Out:=<path to resulting json>";
+
+        public bool CanHandle(Dictionary<string, string> commands)
+        {
+            return commands.ContainsKey("GenerateBatchTest");
+        }
+
+        public string Execute(Dictionary<string, string> commands)
+        {
+            string templatePath = commands["template"];
+            string examplePath = commands["exampleentities"];
+            string outputPath = commands["batchresult"];
+            using (FileStream template = new FileStream(templatePath, FileMode.Open))
+            using (FileStream examples = new FileStream(examplePath, FileMode.Open))
+            using (FileStream result = new FileStream(outputPath, FileMode.Create))
+            {
+                this.GenerateTest(template, examples, result);
+            }
+
+            return nameof(BatchTestTool) + " wrote to " + outputPath;
+        }
+
         public void GenerateTest(Stream template, Stream entityExamples, Stream output)
         {
             var templateBatch = JsonHelper.DeserializeFromStream<BatchTest>(template);
