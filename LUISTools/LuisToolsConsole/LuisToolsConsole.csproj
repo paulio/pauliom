@@ -9,4 +9,8 @@
     <ProjectReference Include="..\LUISTools\LUISTools.csproj" />
   </ItemGroup>
 
+  <PropertyGroup>
+    <TargetLatestRuntimePatch>true</TargetLatestRuntimePatch>
+  </PropertyGroup>
+
 </Project>
