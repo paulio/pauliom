@@ -14,7 +14,7 @@ The first of the LUIS Tools is the LuisToolsConsole. It's crazy complicated at t
     "EntitySources": [
       {
         "EntityName": "personName",
-        "FilePathToValue": "PersonNames.txt"
+        "FilePathToValue": "fullpath\\PersonNames.txt"
       }
     ]
   }
@@ -112,6 +112,12 @@ The *ExamplesFile* is then fed through the *TemplateFile* to finally produce the
   },
   {
     "text": "what age is Bareil Antos",
-    ... <ETC>
+    ...
 ]
+```
+
+## Example command
+In this example all the parts are invoked in a single run;
+```shell
+LuisToolsConsole GenerateExample:=1 Map:=C:\LUISTools\Examples\ExampleGeneratorMap.json ExampleResult:=C:\LUISTools\Examples\Examples.json GenerateBatchTest:=1 Template:=C:\LUISTools\Examples\Template.json ExampleEntities:=C:\LUISTools\Examples\Examples.json BatchResult:=C:\LUISTools\Examples\BatchTestResult.json
 ```
