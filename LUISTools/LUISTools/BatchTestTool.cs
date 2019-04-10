@@ -1,11 +1,4 @@
-﻿// ***********************************************************************
-// <copyright file="BatchTestTool.cs">
-//     Copyright (c) CBC Ltd. All rights reserved.
-// </copyright>
-// <summary>Creates files for use with the LUIS online Batch Tester</summary>
-// ***********************************************************************
-
-namespace LUISTools
+﻿namespace LUISTools
 {
     using System;
     using System.Collections.Generic;
@@ -15,7 +8,7 @@ namespace LUISTools
     using LUISTools.Models;
 
     /// <summary>
-    /// Class BatchTestTool.
+    /// Batch Test Tool.
     /// Implements the <see cref="LUISTools.ISupportsCommands" />
     /// </summary>
     /// <seealso cref="LUISTools.ISupportsCommands" />
@@ -59,7 +52,7 @@ namespace LUISTools
                 this.GenerateTest(template, examples, result);
             }
 
-            return nameof(BatchTestTool) + " wrote to " + outputPath;
+            return nameof(BatchTestTool) + " written to " + outputPath;
         }
 
         /// <summary>

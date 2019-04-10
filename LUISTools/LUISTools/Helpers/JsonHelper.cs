@@ -1,10 +1,4 @@
-﻿// ***********************************************************************
-// <copyright file="JsonHelper.cs">
-//     Copyright (c) CBC Ltd. All rights reserved.
-// </copyright>
-// <summary>Help for JSON</summary>
-// ***********************************************************************
-
+﻿
 namespace LUISTools.Helpers
 {
     using System.IO;

@@ -1,11 +1,4 @@
-﻿// ***********************************************************************
-// <copyright file="Program.cs">
-//     Copyright (c) CBC Ltd. All rights reserved.
-// </copyright>
-// <summary>Main console program</summary>
-// ***********************************************************************
-
-namespace LuisToolsConsole
+﻿namespace LuisToolsConsole
 {
     using System;
     using System.Collections.Generic;
@@ -65,7 +58,7 @@ namespace LuisToolsConsole
         /// Commands from arguments.
         /// </summary>
         /// <param name="args">The arguments.</param>
-        /// <returns>Dictionary&lt;System.String, System.String&gt;.</returns>
+        /// <returns>Commands from arguments</returns>
         private static Dictionary<string, string> CommandsFromArgs(string[] args)
         {
             var commands = new Dictionary<string, string>();

@@ -1,10 +1,4 @@
-﻿// ***********************************************************************
-// <copyright file="ISupportsCommands.cs">
-//     Copyright (c) CBC Ltd. All rights reserved.
-// </copyright>
-// <summary>Interface for tool commands.</summary>
-// ***********************************************************************
-namespace LUISTools
+﻿namespace LUISTools
 {
     using System.Collections.Generic;
 

@@ -1,11 +1,4 @@
-﻿// ***********************************************************************
-// <copyright file="ExampleGeneratorTool.cs">
-//     Copyright (c) CBC Ltd. All rights reserved.
-// </copyright>
-// <summary>Tool to help create the examples that are used by the Batch Test Tool.</summary>
-// ***********************************************************************
-
-namespace LUISTools
+﻿namespace LUISTools
 {
     using System.Collections.Generic;
     using System.IO;
