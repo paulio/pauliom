@@ -1,0 +1,22 @@
+{
+  "BatchTestItems": [
+    {
+      "text": "how old is <personName>",
+      "intent": "WhatIsTheirAge",
+      "entities": [
+        {
+          "entity": "personName"
+        }
+      ]
+    },
+    {
+      "text": "what age is <personName>",
+      "intent": "WhatIsTheirAge",
+      "entities": [
+        {
+          "entity": "personName"
+        }
+      ]
+    }
+  ]
+}
