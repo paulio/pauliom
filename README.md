@@ -46,7 +46,7 @@ The output of this first tool is an *ExamplesFile*
   ]
 }
 ```
-This can then be edited on it's own, but the real use is to then run it through a *TemplateFile* to generate the different test batch utterances
+This can then be edited on its own, but the real use is to then run it through a *TemplateFile* to generate the different test batch utterances
 
 ### Template File
 ```json
